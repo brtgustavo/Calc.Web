@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado">0</p>
+            <table> <!--Cria tabela-->
+                <tr> <!--Cria linha da tabela Table Row-->
+                    <td> <!--Cria uma coluna dentro da tr-->
+                        <button class="btn" onclick="clean()">C</button>  
+                        <button class="btn" onclick="insert('*')">*</button>
+                        <button class="btn" onclick="insert('/')">/</button>
+                        <button class="btn" onclick="back()">D</button> 
+                    </td>
+                </tr> 
+                <tr> <!--Cria linha da tabela Table Row-->
+                    <td> <!--Cria uma coluna dentro da tr-->
+                        <button class="btn" onclick="insert('7')">7</button> <!--onclick é evento do js com a função insert-->
+                        <button class="btn" onclick="insert('8')">8</button>
+                        <button class="btn" onclick="insert('9')">9</button>
+                        <button class="btn" onclick="insert('+')">+</button>
+                    </td>
+                </tr> 
+                <tr> <!--Cria linha da tabela Table Row-->
+                    <td> <!--Cria uma coluna dentro da tr-->
+                        <button class="btn" onclick="insert('4')">4</button>
+                        <button class="btn" onclick="insert('5')">5</button>
+                        <button class="btn" onclick="insert('6')">6</button>
+                        <button class="btn" onclick="insert('-')">-</button>
+                    </td>
+                </tr> 
+                <tr> <!--Cria linha da tabela Table Row-->
+                    <td> <!--Cria uma coluna dentro da tr-->
+                        <button class="btn" onclick="insert('1')">1</button>
+                        <button class="btn" onclick="insert('2')">2</button>
+                        <button class="btn" onclick="insert('3')">3</button>
+                        <button class="btn" onclick="calcular()">=</button>
+                    </td>
+                </tr> 
+                <tr> <!--Cria linha da tabela Table Row-->
+                    <td> <!--Cria uma coluna dentro da tr-->
+                        <button  class="btn" onclick="insert('0')">0</button>
+                        <button class="btn" onclick="insert('.')">.</button>
+                        
+                    </td>
+                </tr> 
+
+            </table>
+            
+        </div>
+        <div class="rodape">
+
+            <h3>Developer by </h3>
+            <span> &copy Gustavo</span>
+            
+
+            <div class="itens">
+                <a href="https://www.linkedin.com/in/gustavo-aparecido-brito-a59015190/" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt=""></a>
+                <a href="https://github.com/brtgustavo" target="_blank"><img class="git"  src="https://icones.pro/wp-content/uploads/2021/06/icone-github-bleu.png" alt=""></a>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
